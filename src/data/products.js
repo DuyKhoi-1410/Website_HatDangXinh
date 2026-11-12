@@ -412,7 +412,7 @@ export const INGREDIENT_SPOTLIGHT = [
   {
     name: 'Hạt Sen Sấy',
     desc: 'Giòn xốp thanh nhẹ, mang phong vị truyền thống mộc mạc.',
-    image: 'https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=400&q=80',
+    image: '/images/hat-sen-say.png',
     color: '#FFC52E'
   },
   {

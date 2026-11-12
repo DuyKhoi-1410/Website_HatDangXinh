@@ -62,7 +62,7 @@ export default function HeroSection() {
         className="hidden lg:block absolute top-36 right-[8%] z-20 p-2.5 pr-4 rounded-2xl bg-[#062A1F]/85 border border-[#00C995]/40 backdrop-blur-md shadow-xl"
       >
         <div className="flex items-center gap-2.5">
-          <img src="/images/lotus-granola-delight.jpg" alt="Lotus & Granola" className="w-7 h-7 rounded-lg object-cover border border-[#00C995]/40" />
+          <img src="/images/hat-sen-say.png" alt="Hạt Sen Sấy" className="w-7 h-7 object-contain drop-shadow" />
           <span className="text-xs font-semibold text-[#F4EBD8]">Hạt Sen Sấy Mộc Mạc</span>
         </div>
       </motion.div>

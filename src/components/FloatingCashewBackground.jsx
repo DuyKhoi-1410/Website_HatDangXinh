@@ -47,6 +47,9 @@ export default function FloatingCashewBackground() {
   const nutLeafY = useTransform(smoothProgress, [0, 1], [0, -320]);
   const nutLeafRotate = useTransform(smoothProgress, [0, 1], [0, 60]);
 
+  const lotusY = useTransform(smoothProgress, [0, 1], [0, -280]);
+  const lotusRotate = useTransform(smoothProgress, [0, 1], [0, -45]);
+
   return (
     <div
       ref={containerRef}
@@ -241,6 +244,30 @@ export default function FloatingCashewBackground() {
           }}
           src="/images/hat-dieu.png"
           alt="Hạt điều tự nhiên"
+          className="w-full h-auto filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.65)] opacity-90"
+        />
+      </motion.div>
+
+      {/* Lotus Seeds with Green Leaves - Organic floating element */}
+      <motion.div
+        style={{ y: lotusY, rotate: lotusRotate }}
+        className="hidden lg:block absolute bottom-[20%] left-[22%] w-26 md:w-34 drop-shadow-2xl z-10"
+      >
+        <motion.img
+          animate={{
+            y: [0, 36, -14, 24, 0],
+            x: [0, 16, -12, 10, 0],
+            rotate: [0, 12, -8, 6, 0],
+            scale: [1, 1.05, 0.97, 1.02, 1],
+          }}
+          transition={{
+            duration: 5.4,
+            repeat: Infinity,
+            ease: 'easeInOut',
+            delay: 1.3,
+          }}
+          src="/images/hat-sen-say.png"
+          alt="Hạt sen sấy"
           className="w-full h-auto filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.65)] opacity-90"
         />
       </motion.div>
